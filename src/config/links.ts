@@ -17,6 +17,6 @@ export type NavLink = {
 export const Navbar_Links: NavLink[] = [
   { name: 'podcast', href: Links.patreon },
   { name: `let's plays`, href: Links.social.youtube },
-  { name: 'bingo', href: 'bingo' },
+  { name: 'bingo', href: Links.social.twitch },
   { name: 'about', href: 'about' },
 ]
