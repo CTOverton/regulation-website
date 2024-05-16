@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 className={'text-display mb-4 lg:mb-8'}>
             regulation <br /> awaits
           </h1>
-          <p className={'mb-16 max-w-sm'}>
+          <p className={'mb-16 max-w-sm text-xl'}>
             The Regulation Podcast is a show about friendship and embracing
             absurdity.
           </p>
