@@ -7,6 +7,7 @@ export const Links = {
     twitch: 'https://twitch.tv/theregulationpod',
     tiktok: 'https://tiktok.com/@theregulationpod',
   },
+  github: 'https://github.com/CTOverton/regulation-website',
 }
 
 export type NavLink = {
@@ -17,6 +18,5 @@ export type NavLink = {
 export const Navbar_Links: NavLink[] = [
   { name: 'podcast', href: Links.patreon },
   { name: `let's plays`, href: Links.social.youtube },
-  { name: 'bingo', href: Links.social.twitch },
-  { name: 'about', href: 'about' },
+  { name: 'streams', href: Links.social.twitch },
 ]
