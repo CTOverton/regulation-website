@@ -24,7 +24,8 @@ export default function Navbar() {
             <div className="mx-auto max-w-7xl px-4 pt-2">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-                  <Link
+                  <Disclosure.Button
+                    as={Link}
                     href={'/'}
                     className="relative rounded-full transition-opacity hover:opacity-50"
                   >
@@ -36,7 +37,7 @@ export default function Navbar() {
                       aria-label={'Regulation Icon'}
                       className={'h-10 w-10 object-cover md:h-14 md:w-14'}
                     />
-                  </Link>
+                  </Disclosure.Button>
                 </div>
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
