@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons/faPlay'
 import { Links } from '@/config/links'
 import Socials from '@/components/socials'
+import { postContent, postDate, postTitle } from '@/config/latestPost'
 
 export default function Hero() {
   return (
@@ -37,21 +38,9 @@ export default function Hero() {
                 'h-full w-full overflow-clip rounded-xl bg-neutral-800 px-4 py-8'
               }
             >
-              <h2 className={'text-2xl font-bold'}>RSS Feed</h2>
-              <div className={'mb-4 text-neutral-500'}>May 14th</div>
-              <p className={'text-base'}>
-                Hey everyone, We're still sorting out some paperwork regarding
-                our regular RSS feed and YouTube channel so, for our first
-                episode, we're going to use our brand new Patreon for hosting.
-                You can use our Patreon RSS this week to listen to our first
-                episode at 10PM CT TONIGHT! That's right, because of the
-                technical hurdles we're putting everyone through, and because
-                we're kind of too excited to wait anyway, we're releasing our
-                first episode of Regulation Podcast tonight at 10pm CT. If you
-                prefer to get it on youtube, you can. We'll be posting it to our
-                Regulation Podcast Gaming Channel which is right here:
-                https://www.youtube.com/@TheRegulationPodcast
-              </p>
+              <h2 className={'text-2xl font-bold'}>{postTitle}</h2>
+              <div className={'mb-4 text-neutral-500'}>{postDate}</div>
+              <p className={'text-base'}>{postContent}</p>
             </div>
           </Link>
         </div>

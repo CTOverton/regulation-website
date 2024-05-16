@@ -20,6 +20,7 @@ export default function Socials() {
     <div className={'flex items-center space-x-4'}>
       {socials.map((social) => (
         <Link
+          key={social.name}
           className={'flex justify-center'}
           href={social.href}
           target={'_blank'}
