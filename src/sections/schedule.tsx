@@ -105,8 +105,9 @@ export default function Schedule({ className }: { className?: string }) {
               }
             >
               <h2 className={'font-bold'}>{column.title}</h2>
-              {column.content.map((content) => (
+              {column.content.map((content, index) => (
                 <div
+                  key={`${content.title}-${index}`}
                   className={
                     'min-w-48 space-y-2 rounded-lg border border-neutral-700 bg-neutral-800 p-4'
                   }
@@ -120,6 +121,7 @@ export default function Schedule({ className }: { className?: string }) {
                   <div className={'space-y-2'}>
                     {content.labels.map((label) => (
                       <div
+                        key={label}
                         className={`mr-1.5 inline-block text-nowrap rounded-full border bg-opacity-50 px-3 py-1 text-xs ${labelStyles[label]}`}
                       >
                         {label}
