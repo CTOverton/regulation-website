@@ -9,6 +9,7 @@ import { AnalyticsProvider } from '@/providers/AnalyticsProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://regulationwebsite.com'),
   title: 'Regulation Website',
   description:
     'The Regulation Podcast is a show about friendship and embracing absurdity.',
