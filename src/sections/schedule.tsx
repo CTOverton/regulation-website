@@ -96,7 +96,7 @@ export default function Schedule({ className }: { className?: string }) {
     <AnimateSlideUp>
       <section id={'schedule'} className={className}>
         <h1 className={'text-display mb-16 text-center'}>content schedule</h1>
-        <div className={'flex space-x-4 overflow-x-scroll'}>
+        <div className={'no-scrollbar flex space-x-4 overflow-x-scroll'}>
           {columns.map((column) => (
             <div
               key={column.title}
