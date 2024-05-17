@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ~~Regulation~~ Unregulated Website
+[![Regulation Website](./public/github-image.png)](https://www.regulationwebsite.com/)
 
-## Getting Started
+<p align="center">
+  Made with ❤️ by the community
+</p>
 
-First, run the development server:
+## Support the Regulation Podcast
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+While this site is currently a passion project, the Regulation Podcast is a real thing that needs your support. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you enjoy the content, please consider supporting the podcast on [Patreon](https://www.patreon.com/RegulationPod).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## About
 
-## Learn More
+This little passion project was made as a potential starting point for the Regulation Crew and community. As a community effort all feedback is welcome and collaboration is encouraged.
 
-To learn more about Next.js, take a look at the following resources:
+Live site: [regulationwebsite.com](https://www.regulationwebsite.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Community
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For fresh ideas, feature requests, feedback, or
 
-## Deploy on Vercel
+[Discuss this project on GitHub](https://github.com/CTOverton/regulation-website/discussions)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For chatting with other fans of the podcast 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Join the Regulation Discord](https://discord.gg/theregulationpod)
+
+## Contributing
+
+If you're interested in contributing to this project, please read the [contributing docs](./.github/CONTRIBUTING.md) before submitting a pull request.
