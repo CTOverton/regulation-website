@@ -1,12 +1,28 @@
+'use client'
+
 import { faPatreon } from '@fortawesome/free-brands-svg-icons/faPatreon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { Links } from '@/config/links'
-import { AnimateSlideDown } from '@/components/AnimatedSlideDown'
+import { motion } from 'framer-motion'
 
 export default function Banner() {
   return (
-    <AnimateSlideDown delay={0.8}>
+    <motion.div
+      initial={{
+        y: -75,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.5,
+        ease: 'easeOut',
+        delay: 0.8,
+      }}
+    >
       <Link href={Links.patreon}>
         <div
           className={
@@ -22,6 +38,6 @@ export default function Banner() {
           />
         </div>
       </Link>
-    </AnimateSlideDown>
+    </motion.div>
   )
 }

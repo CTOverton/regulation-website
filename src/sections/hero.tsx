@@ -6,10 +6,10 @@ import Socials from '@/components/socials'
 import { postContent, postDate, postTitle } from '@/config/latestPost'
 import { AnimateSlideUp } from '@/components/AnimatedSlideUp'
 
-export default function Hero() {
+export default function Hero({ className }: { className?: string }) {
   return (
     <AnimateSlideUp>
-      <section>
+      <section className={className}>
         <div className={'grid grid-cols-1 gap-16 sm:gap-8 md:grid-cols-2'}>
           <div>
             <h1 className={'text-display mb-4 lg:mb-8'}>

@@ -32,12 +32,16 @@ const cards: CardItem[] = [
   },
 ]
 
-export default function ContentCards() {
+export default function ContentCards({ className }: { className?: string }) {
   return (
-    <section id={'content'}>
+    <section id={'content'} className={className}>
       <div className={'grid grid-cols-1 gap-16 lg:grid-cols-3'}>
         {cards.map((card, index) => (
-          <AnimateSlideUp key={card.name} delay={0.2 * index}>
+          <AnimateSlideUp
+            className={'flex'}
+            key={card.name}
+            delay={0.2 * index}
+          >
             <Card item={card} />
           </AnimateSlideUp>
         ))}

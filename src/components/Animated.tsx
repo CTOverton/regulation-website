@@ -1,6 +1,7 @@
 'use client'
 
 import {
+  HTMLMotionProps,
   motion,
   Transition,
   useAnimation,
@@ -20,7 +21,7 @@ export type AnimateOnScrollProps = {
   once?: boolean
   amount?: 'some' | 'all' | number
   children: React.ReactNode
-} & React.HTMLProps<HTMLDivElement>
+} & HTMLMotionProps<'div'>
 
 export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   animation = slideUp,
@@ -44,18 +45,18 @@ export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   }, [isInView, mainControls, once])
 
   return (
-    <div ref={ref} {...other}>
-      <motion.div
-        variants={animation.variants}
-        initial={animation.initial}
-        animate={mainControls}
-        transition={{
-          ...animation.transition,
-          delay,
-        }}
-      >
-        {children}
-      </motion.div>
-    </div>
+    <motion.div
+      variants={animation.variants}
+      initial={animation.initial}
+      animate={mainControls}
+      transition={{
+        ...animation.transition,
+        delay,
+      }}
+      ref={ref}
+      {...other}
+    >
+      {children}
+    </motion.div>
   )
 }
