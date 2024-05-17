@@ -17,7 +17,7 @@ export default function Footer() {
         <div>Regulation Company LLC · All rights reserved</div>
         <div>
           <Link href={Links.github} target={'_blank'}>
-            <div className={'group flex items-center space-x-2'}>
+            <div className={'group flex items-center justify-center space-x-2'}>
               <div className={'transition-opacity group-hover:opacity-50'}>
                 Edit on GitHub
               </div>
