@@ -6,7 +6,7 @@ import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 import { faTwitch } from '@fortawesome/free-brands-svg-icons/faTwitch'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok'
 import Link from 'next/link'
-import { faReddit } from '@fortawesome/free-brands-svg-icons'
+import { faReddit } from '@fortawesome/free-brands-svg-icons/faReddit'  
 
 const socials = [
   { name: 'Instagram', href: Links.social.instagram, icon: faInstagram },
