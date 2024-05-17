@@ -6,6 +6,7 @@ import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 import { faTwitch } from '@fortawesome/free-brands-svg-icons/faTwitch'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok'
 import Link from 'next/link'
+import { faReddit } from '@fortawesome/free-brands-svg-icons'
 
 const socials = [
   { name: 'Instagram', href: Links.social.instagram, icon: faInstagram },
@@ -13,6 +14,7 @@ const socials = [
   { name: 'Twitter', href: Links.social.twitter, icon: faXTwitter },
   { name: 'Twitch', href: Links.social.twitch, icon: faTwitch },
   { name: 'TikTok', href: Links.social.tiktok, icon: faTiktok },
+  { name: 'Subreddit', href: Links.social.subreddit, icon: faReddit }
 ]
 
 export default function Socials() {
