@@ -6,7 +6,7 @@ export const Links = {
     twitter: 'https://twitter.com/RegulationPod',
     twitch: 'https://twitch.tv/theregulationpod',
     tiktok: 'https://tiktok.com/@theregulationpod',
-    subreddit: 'https://www.reddit.com/r/theregulationpod/'
+    subreddit: 'https://www.reddit.com/r/theregulationpod/',
   },
   github: 'https://github.com/CTOverton/regulation-website',
 }
