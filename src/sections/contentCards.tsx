@@ -3,6 +3,7 @@ import LetsPlay_Img from '@/assets/images/letsplay.png'
 import Bingo_Img from '@/assets/images/bingo.png'
 import { Links } from '@/config/links'
 import Card, { CardItem } from '@/components/card'
+import { AnimateSlideUp } from '@/components/AnimatedSlideUp'
 
 const cards: CardItem[] = [
   {
@@ -35,8 +36,10 @@ export default function ContentCards() {
   return (
     <section id={'content'}>
       <div className={'grid grid-cols-1 gap-16 lg:grid-cols-3'}>
-        {cards.map((card) => (
-          <Card key={card.name} item={card} />
+        {cards.map((card, index) => (
+          <AnimateSlideUp key={card.name} delay={0.2 * index}>
+            <Card item={card} />
+          </AnimateSlideUp>
         ))}
       </div>
     </section>

@@ -10,6 +10,7 @@ import Image from 'next/image'
 import { Links, Navbar_Links, NavLink } from '@/config/links'
 import { useSelectedLayoutSegment } from 'next/navigation'
 import Link from 'next/link'
+import { AnimatedFadeIn } from '@/components/AnimatedFadeIn'
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
@@ -17,79 +18,82 @@ function classNames(...classes: any[]) {
 
 export default function Navbar() {
   return (
-    <>
-      <Disclosure as="nav" className="bg-black">
-        {({ open }) => (
-          <>
-            <div className="mx-auto max-w-7xl px-4 pt-2">
-              <div className="relative flex h-16 items-center justify-between">
-                <div className="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
-                  <Disclosure.Button
-                    as={Link}
-                    href={'/'}
-                    className="relative rounded-full transition-opacity hover:opacity-50"
-                  >
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">Home</span>
-                    <Image
-                      src={Logo_Icon}
-                      alt=""
-                      aria-label={'Regulation Icon'}
-                      className={'h-10 w-10 object-cover md:h-14 md:w-14'}
-                    />
-                  </Disclosure.Button>
-                </div>
-
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
-                  <div className="hidden sm:mr-6 sm:block">
-                    <div className="flex space-x-4">
-                      {Navbar_Links.map((item) => (
-                        <NavItem key={item.name} item={item} />
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex flex-shrink-0 items-center">
-                    <Link
-                      href={Links.patreon}
-                      className="relative rounded-full p-1 text-white transition-opacity hover:opacity-50"
+    <AnimatedFadeIn>
+      <>
+        <Disclosure as="nav" className="bg-black">
+          {({ open }) => (
+            <>
+              <div className="mx-auto max-w-7xl px-4 pt-2">
+                <div className="relative flex h-16 items-center justify-between">
+                  <div className="absolute inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:pr-0">
+                    <Disclosure.Button
+                      as={Link}
+                      href={'/'}
+                      className="relative rounded-full transition-opacity hover:opacity-50"
                     >
                       <span className="absolute -inset-1.5" />
-                      <span className="sr-only">Patreon</span>
+                      <span className="sr-only">Home</span>
+                      <Image
+                        src={Logo_Icon}
+                        alt=""
+                        aria-label={'Regulation Icon'}
+                        className={'h-10 w-10 object-cover md:h-14 md:w-14'}
+                      />
+                    </Disclosure.Button>
+                  </div>
+
+                  <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                    <div className="hidden sm:mr-6 sm:block">
+                      <div className="flex space-x-4">
+                        {Navbar_Links.map((item) => (
+                          <NavItem key={item.name} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                    <Link href={Links.patreon}>
+                      <div className="flex flex-shrink-0 items-center">
+                        <div className="relative rounded-full p-1 text-white transition-opacity hover:opacity-50">
+                          <span className="absolute -inset-1.5" />
+                          <span className="sr-only">Patreon</span>
+                          <FontAwesomeIcon
+                            icon={faPatreon}
+                            className={
+                              'h-6 w-6 transition-opacity hover:opacity-50'
+                            }
+                          />
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+
+                  <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    {/* Mobile menu button*/}
+                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white transition-colors hover:bg-neutral-700">
+                      <span className="absolute -inset-0.5" />
+                      <span className="sr-only">Open main menu</span>
                       <FontAwesomeIcon
-                        icon={faPatreon}
+                        icon={open ? faXmark : faBars}
                         className={
                           'h-6 w-6 transition-opacity hover:opacity-50'
                         }
                       />
-                    </Link>
+                    </Disclosure.Button>
                   </div>
                 </div>
+              </div>
 
-                <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                  {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white transition-colors hover:bg-neutral-700">
-                    <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Open main menu</span>
-                    <FontAwesomeIcon
-                      icon={open ? faXmark : faBars}
-                      className={'h-6 w-6 transition-opacity hover:opacity-50'}
-                    />
-                  </Disclosure.Button>
+              <Disclosure.Panel className="sm:hidden">
+                <div className="absolute h-full w-full space-y-1 bg-black px-2 pb-3 pt-2">
+                  {Navbar_Links.map((item) => (
+                    <MobileNavItem key={item.name} item={item} />
+                  ))}
                 </div>
-              </div>
-            </div>
-
-            <Disclosure.Panel className="sm:hidden">
-              <div className="absolute h-full w-full space-y-1 bg-black px-2 pb-3 pt-2">
-                {Navbar_Links.map((item) => (
-                  <MobileNavItem key={item.name} item={item} />
-                ))}
-              </div>
-            </Disclosure.Panel>
-          </>
-        )}
-      </Disclosure>
-    </>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+      </>
+    </AnimatedFadeIn>
   )
 }
 

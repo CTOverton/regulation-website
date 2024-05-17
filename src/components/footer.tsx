@@ -17,10 +17,10 @@ export default function Footer() {
         <div>Regulation Company LLC · All rights reserved</div>
         <div>
           <Link href={Links.github} target={'_blank'}>
-            <div className={'group space-x-2'}>
-              <span className={'transition-opacity group-hover:opacity-50'}>
+            <div className={'group flex items-center space-x-2'}>
+              <div className={'transition-opacity group-hover:opacity-50'}>
                 Edit on GitHub
-              </span>
+              </div>
               <FontAwesomeIcon
                 icon={faGithub}
                 className={'h-4 w-4 transition-opacity group-hover:opacity-50'}
