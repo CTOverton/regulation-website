@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons/faPlay'
 import { Links } from '@/config/links'
 import Socials from '@/components/socials'
-import { postContent, postDate, postTitle } from '@/config/latestPost'
+import { postContent, postDate, postLink, postTitle } from '@/config/latestPost'
 import { AnimateSlideUp } from '@/components/AnimatedSlideUp'
 
 export default function Hero({ className }: { className?: string }) {
@@ -34,7 +34,7 @@ export default function Hero({ className }: { className?: string }) {
             </div>
           </div>
           <div>
-            <Link href={Links.patreon}>
+            <Link href={postLink}>
               <div
                 className={
                   'h-full w-full overflow-clip rounded-xl bg-neutral-800 px-4 py-8'
