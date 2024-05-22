@@ -34,17 +34,14 @@ export default function Hero({ className }: { className?: string }) {
             </div>
           </div>
           <div>
-            <Link href={postLink}>
-              <div
-                className={
-                  'h-full w-full overflow-clip rounded-xl bg-neutral-800 px-4 py-8'
-                }
-              >
-                <h2 className={'text-2xl font-bold'}>{postTitle}</h2>
-                <div className={'mb-4 text-neutral-500'}>{postDate}</div>
-                <p className={'text-base'}>{postContent}</p>
-              </div>
-            </Link>
+            <iframe
+              src="https://open.spotify.com/embed/show/2gSmkcd3Z7fdhZYXQ674GD?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allowFullScreen={false}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
