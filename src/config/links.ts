@@ -1,11 +1,13 @@
 export const Links = {
-  patreon: 'https://www.patreon.com/regulationpod',
+  patreon: 'https://www.patreon.com/TheRegulationPod',
   social: {
-    instagram: 'https://www.instagram.com/theregulationpod',
-    youtube: 'https://youtube.com/channel/UCKoQPVYSFJt5HFvyKzkFtNg',
+    instagram: 'https://www.instagram.com/fuckfacepod',
+    youtube: 'https://www.youtube.com/@theregulationpod',
     twitter: 'https://twitter.com/RegulationPod',
     twitch: 'https://twitch.tv/theregulationpod',
     tiktok: 'https://tiktok.com/@theregulationpod',
+    spotify:
+      'https://open.spotify.com/show/2gSmkcd3Z7fdhZYXQ674GD?si=9c68755e406641b6',
     subreddit: 'https://www.reddit.com/r/theregulationpod/',
   },
   github: 'https://github.com/CTOverton/regulation-website',
