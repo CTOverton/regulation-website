@@ -5,16 +5,16 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 import { faTwitch } from '@fortawesome/free-brands-svg-icons/faTwitch'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok'
-import { faReddit } from '@fortawesome/free-brands-svg-icons/faReddit'
+import { faSpotify } from '@fortawesome/free-brands-svg-icons/faSpotify'
 import Link from 'next/link'
 
 const socials = [
-  { name: 'Instagram', href: Links.social.instagram, icon: faInstagram },
+  { name: 'Spotify', href: Links.social.spotify, icon: faSpotify },
   { name: 'YouTube', href: Links.social.youtube, icon: faYoutube },
-  { name: 'Twitter', href: Links.social.twitter, icon: faXTwitter },
+  { name: 'Instagram', href: Links.social.instagram, icon: faInstagram },
   { name: 'Twitch', href: Links.social.twitch, icon: faTwitch },
+  { name: 'Twitter', href: Links.social.twitter, icon: faXTwitter },
   { name: 'TikTok', href: Links.social.tiktok, icon: faTiktok },
-  { name: 'Subreddit', href: Links.social.subreddit, icon: faReddit },
 ]
 
 export default function Socials() {
