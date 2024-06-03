@@ -1,5 +1,6 @@
 export const Links = {
   patreon: 'https://www.patreon.com/TheRegulationPod',
+  shop: 'https://www.patreon.com/theregulationpod/shop',
   social: {
     instagram: 'https://www.instagram.com/fuckfacepod',
     youtube: 'https://www.youtube.com/@theregulationpod',
@@ -22,4 +23,5 @@ export const Navbar_Links: NavLink[] = [
   { name: 'podcast', href: Links.patreon },
   { name: `let's plays`, href: Links.social.youtube },
   { name: 'streams', href: Links.social.twitch },
+  { name: 'shop', href: Links.shop },
 ]
