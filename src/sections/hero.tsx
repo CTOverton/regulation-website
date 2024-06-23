@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons/faPlay'
-import { Links } from '@/config/links'
+import { Links, Spotify_showId } from '@/config/links'
 import Socials from '@/components/socials'
 import { postContent, postDate, postLink, postTitle } from '@/config/latestPost'
 import { AnimateSlideUp } from '@/components/AnimatedSlideUp'
@@ -35,7 +35,7 @@ export default function Hero({ className }: { className?: string }) {
           </div>
           <div>
             <iframe
-              src="https://open.spotify.com/embed/show/2gSmkcd3Z7fdhZYXQ674GD?utm_source=generator&theme=0"
+              src={`https://open.spotify.com/embed/show/${Spotify_showId}?utm_source=generator&theme=0`}
               width="100%"
               height="352"
               allowFullScreen={false}
